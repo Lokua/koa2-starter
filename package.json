@@ -1,0 +1,45 @@
+{
+  "name": "koa2-starter",
+  "version": "0.0.0",
+  "description": "Barebones, client agnostic setup for a koa@2.x server",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "NODE_ENV=development node server",
+    "test": "NODE_ENV=test ./node_modules/.bin/mocha './{client,server}/**/*.spec.{js,jsx}' ",
+    "test:watch": "NODE_ENV=test ./node_modules/.bin/mocha --watch './{client,server}/**/*.spec.{js,jsx}' "
+  },
+  "keywords": [
+    "koa",
+    "koa2",
+    "server",
+    "starter"
+  ],
+  "author": "Joshua Kleckner <lokua@lokua.net>",
+  "license": "MIT",
+  "dependencies": {
+    "babel-plugin-syntax-async-functions": "^6.8.0",
+    "babel-plugin-transform-async-to-generator": "^6.8.0",
+    "babel-plugin-transform-class-properties": "^6.9.0",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-plugin-transform-function-bind": "^6.8.0",
+    "babel-plugin-transform-object-rest-spread": "^6.8.0",
+    "babel-plugin-transform-regenerator": "^6.9.0",
+    "babel-polyfill": "^6.9.0",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-stage-1": "^6.5.0",
+    "babel-register": "^6.9.0",
+    "koa": "^2.0.0",
+    "koa-bodyparser": "^2.2.0",
+    "koa-convert": "^1.2.0",
+    "koa-router": "^7.0.1",
+    "koa-static": "^2.0.0",
+    "mz": "^2.4.0"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "koa-mount": "^1.3.0",
+    "mocha": "^2.4.5",
+    "sinon": "^1.17.4",
+    "supertest": "^1.2.0"
+  }
+}
